@@ -15,7 +15,7 @@ Here is what u can do:
 - Hide done tasks
 - Delete task from the list
 
-## Technology used to create List:
+## Technology used to create the List:
 
 - REACT
 - HTML
@@ -27,10 +27,10 @@ Here is what u can do:
 
 ## How to use?
 
-1. Type a new task in input.
+1. Type a new task in the input.
 2. Click "Dodaj zadanie".
 3. If you have completed the task, click the green button.
-4. If you have not completed the task, click the red button.
+4. If you havent not completed the task, click the red button.
 
 
 
@@ -51,7 +51,7 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Check the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
