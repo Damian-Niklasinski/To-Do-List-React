@@ -25,7 +25,7 @@ function App() {
             <Section
                 title="Lista zadań"
                 body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
-                HeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+                headerContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
             />
         </Container>
     );
