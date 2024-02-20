@@ -42,19 +42,19 @@
     border: 1px solid rgba(200, 198, 198, 0.694);
 }
 
-.section__form {
+.form__form {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr auto;
     padding: 10px;
 }
 
-.section__formInput {
+.form__formInput {
     padding: 10px;
     border: 1px solid rgba(200, 198, 198, 0.694);
 }
 
-.section__formButton {
+.form__formButton {
     border: none;
     background-color: teal;
     color: white;
@@ -62,30 +62,30 @@
 }
 
 @media (max-width: 767px) {
-    .section__form {
+    .form__form {
         display: flex;
         flex-wrap: wrap;
     }
 }
 
 @media (max-width: 767px) {
-    .section__formInput {
+    .form__formInput {
         flex-basis: 100%;
     }
 }
 
 @media (max-width: 767px) {
-    .section__formButton {
+    .form__formButton {
         flex-basis: 100%;
     }
 }
 
-.section__formButton:hover {
+.form__formButton:hover {
     transition: 0.3s;
     transform: scale(120%);
 }
 
-.section__formButton:active {
+.form__formButton:active {
     background-color: rgba(0, 128, 128, 0.743);
     color: white;
     padding: 10px;
