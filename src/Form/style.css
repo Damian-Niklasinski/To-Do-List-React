@@ -81,16 +81,11 @@
 }
 
 .section__formButton:hover {
-    border: none;
-    background-color: rgba(0, 128, 128, 0.891);
-    color: white;
-    padding: 10px;
     transition: 0.3s;
     transform: scale(120%);
 }
 
 .section__formButton:active {
-    border: none;
     background-color: rgba(0, 128, 128, 0.743);
     color: white;
     padding: 10px;
