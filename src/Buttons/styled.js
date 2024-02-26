@@ -1,11 +1,11 @@
 import styled, { css } from "styled-components";
 
-export const DivButtons = styled.div`
+export const StyledButtons = styled.div`
     display: flex;
     flex-wrap: wrap;
 `;
 
-export const TasksButtons = styled.button`
+export const Button = styled.button`
     color: hsl(180, 100%, 25%);
     margin-right: 10px;
     border: none;

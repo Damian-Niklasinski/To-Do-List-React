@@ -1,9 +1,11 @@
-import { Containers } from "./styled";
+import { StyledContainer } from "./styled";
+import styled from "styled-components";
+
 
 const Container = ( {children} ) => (
-    <Containers>
+    <StyledContainer>
         {children}
-    </Containers>
+    </StyledContainer>
 );
 
 export default Container;
