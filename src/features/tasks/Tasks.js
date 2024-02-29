@@ -19,12 +19,8 @@ function Tasks() {
 
             <Section
                 title="Lista zadań"
-                body={
-                    <TaskList />
-                }
-                headerContent={
-                    <Buttons />
-                }
+                body={<TaskList />}
+                headerContent={<Buttons />}
             />
         </Container>
     );
