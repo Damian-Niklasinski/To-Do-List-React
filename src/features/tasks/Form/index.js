@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { StyledForm, Input, Button } from "./styled";
 import { useDispatch } from "react-redux";
-import { nanoid } from "@reduxjs/toolkit";
 import { addTask } from "../tasksSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
 
 const Form = () => {
@@ -15,11 +15,15 @@ const Form = () => {
     const onStyledFormubmit = (event) => {
         event.preventDefault();
 
-        dispatch(addTask({
-            content: newTaskContent.trim(),
-            done: false,
-            id: nanoid(),
+        const trimmedTaskContent = newTaskContent.trim();
+        if (trimmedTaskContent === "") {
+            return null;
+        }
 
+        dispatch(addTask({
+            content: trimmedTaskContent,
+            done: false,
+            id: nanoid,
         }));
 
         setNewTask("");

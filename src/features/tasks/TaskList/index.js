@@ -12,7 +12,7 @@ const TaskList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
                     {task.done ? "✔" : ""}
                 </DoneButton>
                 <Span done={task.done}>
-                    {task.id}. {task.content}
+                 {task.id}{task.content}
                 </Span>
                 <RemoveButton
                     onClick={() => removeTask(task.id)}
