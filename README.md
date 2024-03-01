@@ -10,14 +10,22 @@ To-do List was created for the YouCode Course.
 Here is what u can do:
 
 - Add new tasks
+- Download sample tasks from storage.
+- Filter tasks.
 - Mark the task as completed
 - Mark all tasks as complited
 - Hide done tasks
 - Delete task from the list
+- By clicking on a task you can see its details
+- Change sections in navigation.
+
 
 ## Technology used to create the List:
 
 - REACT
+- REACT-SAGA
+- REACT ROUTER
+- Styled Components
 - HTML
 - CSS
 - JS
@@ -27,11 +35,15 @@ Here is what u can do:
 
 ## How to use?
 
-1. Type a new task in the input.
+1. You can download sample tasks from storage or type your task in the input.
 2. Click "Dodaj zadanie".
 3. If you have completed the task, click the green button.
 4. If you havent not completed the task, click the red button.
-
+5. If you want to complete all tasks click "Ukończ wszystkie" button.
+6. If you want to hide all tasks done click "Ukryj ukończone" button.
+7. If you want to filter a task, enter a specific word in the input.
+8. If you want to see the details of a task just click on it.
+9. If you want to change a section, click on the section that interests you in the navigation.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
