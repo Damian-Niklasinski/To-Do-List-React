@@ -11,7 +11,7 @@ const ExampleTasksButton = () => {
     return (
         <StyledButtons>
             <Button onClick={() => dispatch(fetchExampleTasks())}>
-                {Loading === true ? <LoadingParagraph>"Ładuje przykładowe zadania..."</LoadingParagraph> : "Przykładowe zadania"}
+                {Loading === true ? <LoadingParagraph>Ładuje przykładowe zadania...</LoadingParagraph> : "Przykładowe zadania"}
             </Button>
         </StyledButtons>
     )
