@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul` 
     padding: 0;
@@ -56,5 +57,15 @@ export const RemoveButton = styled.button`
 
     &:active {
         background-color: hsl(0, 100%, 60%);
+    }
+`;
+
+export const StyledLink = styled(Link)`
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid teal;
+
+    &:active {
+        color: teal;
     }
 `;
