@@ -6,6 +6,7 @@ const tasksSlice = createSlice({
     initialState: {
         tasks: getTasksFromLocalStorage(),
         hideDone: false,
+        loading: false,
     },
     reducers: {
         addTask: ({ tasks }, { payload: task }) => {
@@ -28,8 +29,12 @@ const tasksSlice = createSlice({
             tasks.splice(index, 1);
         },
         fetchExampleTasks: () => { },
+        fetchExampleTasksLoading: (state) => {
+            state.loading = true;
+        },
         setTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
+            state.loading = false;
         },
     },
 });
@@ -41,6 +46,7 @@ export const {
     allTaskDone,
     removeTasks,
     fetchExampleTasks,
+    fetchExampleTasksLoading,   
     setTasks,
 } = tasksSlice.actions;
 
@@ -48,6 +54,7 @@ export const selectTasksState = state => state.tasks;
 export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectIsEveryTaskDone = state => selectTasks(state).every(({ done }) => done);
+export const selectLoading = state => state.tasks.loading;
 
 export const getTaskById = (state, taskId) =>
     selectTasks(state).find(({ id }) => id === taskId);

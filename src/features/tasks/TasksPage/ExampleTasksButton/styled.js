@@ -26,3 +26,7 @@ export const Button = styled.button`
     }
 
 `;
+
+export const LoadingParagraph = styled.p`
+    color: green;
+`;
